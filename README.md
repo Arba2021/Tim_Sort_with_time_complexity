@@ -36,7 +36,7 @@ With this project, you can see how TimSort handles random arrays of various size
 3. Run the script:
 
    ```bash
-   python timsort_visualization.py
+   python tim_sort.py
    ```
 
 ## 🚀 Usage
