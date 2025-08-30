@@ -1,21 +1,27 @@
-# Dimensional TimSort Sorting Visualization
+# 🚀 TimSort Sorting Visualization
 
-![TimSort Visualization](https://user-images.githubusercontent.com/yourusername/placeholder.png)
+![TimSort Performance](images/timsort_graph.png)
 
-## Overview
+## 🔥 Overview
 
-This project implements a **custom TimSort algorithm** in Python and demonstrates its **time complexity** with both **actual measured times** and **theoretical O(n log n)** growth curves. TimSort is a hybrid sorting algorithm combining **insertion sort** and **merge sort**, widely used in Python's built-in `.sort()` and Java's `Arrays.sort()` for objects.
+Dive into the world of **TimSort**, the super-efficient hybrid sorting algorithm used in Python and Java! This project showcases a **custom TimSort implementation** and visualizes its **time complexity** across different array sizes.
 
-The project generates **random arrays of user-defined sizes and max values**, sorts them using the custom TimSort, measures execution time, and visualizes the results with matplotlib.
+TimSort intelligently combines:
 
-## Features
+* **Insertion Sort** for small subarrays (runs)
+* **Merge Sort** for merging runs efficiently
 
-* Custom implementation of **TimSort** from scratch.
-* Works efficiently for small and large arrays.
-* Visualizes **time complexity** with a plot comparing **actual performance** and **O(n log n) theoretical growth**.
-* Fully commented code for educational purposes.
+With this project, you can see how TimSort handles random arrays of various sizes and compare **actual execution times** with **theoretical O(n log n) growth**.
 
-## Installation
+## ✨ Features
+
+* ✅ Fully custom **TimSort** implementation from scratch
+* ✅ Handles arrays of varying sizes and random values
+* ✅ Visualizes **time complexity** with a sleek matplotlib graph
+* ✅ Overlay of **O(n log n)** theoretical curve for comparison
+* ✅ Highly commented, easy-to-understand code
+
+## 🛠 Installation
 
 1. Clone this repository:
 
@@ -34,17 +40,17 @@ The project generates **random arrays of user-defined sizes and max values**, so
    python timsort_visualization.py
    ```
 
-## Usage
+## 🚀 Usage
 
-1. The program will prompt you for the **maximum value** of array elements.
-2. It will then generate arrays of different sizes `[10, 100, 500, 1000, 5000, 10000]`.
-3. TimSort will sort each array, and execution time will be measured.
-4. A **line graph** will be displayed showing:
+1. Input the **maximum value** for array elements when prompted.
+2. The program will automatically generate arrays of sizes `[10, 100, 500, 1000, 5000, 10000]`.
+3. TimSort will sort each array and measure execution time.
+4. A **dynamic graph** will display:
 
-   * Purple line: Actual time taken by TimSort.
-   * Orange dashed line: Theoretical O(n log n) growth.
+   * **Purple line:** Actual TimSort execution time
+   * **Orange dashed line:** Theoretical O(n log n) growth
 
-## Example Output
+## 🎯 Example Output
 
 ```
 Enter the maximum value for array elements: 1000
@@ -54,34 +60,32 @@ Array size: 500, Time taken: 0.001234 seconds
 ...
 ```
 
-The plotted graph clearly shows how **TimSort scales with input size** and how it compares to **O(n log n)** complexity.
+## 📂 Code Structure
 
-## Code Structure
+* `calminimum(n)` : Calculates minimum run size
+* `insertion_sort(arr, left, right)` : Sorts small runs
+* `merge_sort(arr, left, mid, right)` : Merges sorted runs
+* `tim_sort(arr)` : Main TimSort algorithm
+* `Main Program` : Array generation, timing, and plotting
 
-* `calminimum(n)` : Calculates the minimum run size.
-* `insertion_sort(arr, left, right)` : Sorts small subarrays using insertion sort.
-* `merge_sort(arr, left, mid, right)` : Merges two sorted subarrays.
-* `tim_sort(arr)` : Main TimSort algorithm combining insertion and merge sort.
-* `Main Program` : Handles array generation, timing, and plotting.
-
-## Technologies Used
+## 🌐 Technologies Used
 
 * Python 3.x
-* Matplotlib for plotting graphs
+* Matplotlib for plotting
 * Random module for array generation
-* Time module for measuring performance
+* Time module for performance measurement
 
-## Future Improvements
+## 🔮 Future Improvements
 
-* Allow user to input **custom array sizes** instead of predefined ones.
-* Support for **N-dimensional arrays**.
-* Save the generated plot as an image automatically.
-* Include interactive visualization using **Plotly** or **Matplotlib animations**.
+* Interactive **Plotly visualization** for better UI
+* Support for **user-defined array sizes and dimensions**
+* Automatic saving of generated plots in multiple formats
+* Educational animations demonstrating **run splitting and merging**
 
-## License
+## 📝 License
 
 This project is licensed under the MIT License.
 
 ---
 
-*Created for educational purposes to understand TimSort and its time complexity.*
+*Created for educational purposes to visualize TimSort performance and understand algorithmic complexity.*
