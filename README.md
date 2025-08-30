@@ -1,6 +1,5 @@
 # 🚀 TimSort Sorting Visualization
 
-![TimSort Performance](images/timsort_graph.png)
 
 ## 🔥 Overview
 
